@@ -31,19 +31,17 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="DM.DmProvider" Version="8.3.1.21072" />
+		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
 		<PackageReference Include="System.Text.Encoding.CodePages" Version="5.0.0" Condition="'$(TargetFramework)' == 'netcoreapp3.1'" />
 		<PackageReference Include="System.Text.Encoding.CodePages" Version="5.0.0" Condition="'$(TargetFramework)' == 'netstandard2.0'" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\..\FreeSql\FreeSql.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<Reference Include="DmProvider">
-			<HintPath>lib\DmProvider\netstandard2.0\DmProvider.dll</HintPath>
-			<Private>false</Private>
-		</Reference>
 	</ItemGroup>
 
 	<PropertyGroup Condition="'$(TargetFramework)' == 'net60' or '$(TargetFramework)' == 'netcoreapp3.1' or '$(TargetFramework)' == 'netstandard2.0'">

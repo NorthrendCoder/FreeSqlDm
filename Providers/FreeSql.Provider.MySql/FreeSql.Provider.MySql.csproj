@@ -31,6 +31,12 @@
 	<ItemGroup Condition="'$(TargetFramework)' == 'net451' or '$(TargetFramework)' == 'net45' or '$(TargetFramework)' == 'net40'">
 		<PackageReference Include="MySql.Data" Version="6.9.12" />
 	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\..\FreeSql\FreeSql.csproj" />

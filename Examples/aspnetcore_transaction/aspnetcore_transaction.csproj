@@ -13,6 +13,10 @@
 	<ItemGroup>
 		<PackageReference Include="FreeSql.DbContext" Version="3.2.669" />
 		<PackageReference Include="FreeSql.Provider.Sqlite" Version="3.2.669" />
+		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
 		<PackageReference Include="Rougamo.Fody" Version="1.1.1" />
 		<PackageReference Include="System.Text.Encoding.CodePages" Version="5.0.0" />
 	</ItemGroup>
